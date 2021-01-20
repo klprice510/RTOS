@@ -1,20 +1,18 @@
-/* hw9.c
+/* RTOS
  * Kathryn Price
- * Homework 9
- * CS552
- * Dr. Rinker
+
  * May 8, 2015
  */
  
 /* Purpose:
  *
- * UIK - homework 7
+ * UIK - item 7
  * UIK is a multitasking kernal. The UIK will run 3 user tasks
  * plus an idle task with preemptive multitasking. This RTOS
  * implements a counting semaphore, a timer event 
  * handler and an aging scheduler.
  *
- * SEMAPHORE - homework 8
+ * SEMAPHORE - item 8
  * All the blinking LED tasks utilize the same portout global 
  * variable which is used to display the correct blinking 
  * sequences of LEDs via PORTD. PORTD is only used to set
@@ -22,7 +20,7 @@
  * portout variable is protected by a semaphore and is changed
  * by all three tasks.
  *
- * EVENTS - homework 9
+ * EVENTS - item 9
  * Timer0 is an event timer. Tasks 2 and 3 use the tick timer
  * to delay the LED blinks while Task 1 uses the event timer.
  *
